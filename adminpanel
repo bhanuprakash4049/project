@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="~/Content/AdminCss.css">
+    <title>AdminPage</title>
+</head> 
+<body class="bg-right">
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-10 col-11 mx-auto">
+
+
+                <nav aria-label="breadcrumb" class="mb-3">
+                    <ol class="breadcrumb bg-commom">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#questionpaper">UpdateExam</a></li>
+
+                    </ol>
+                </nav>
+
+                <div class="row">
+                    <!--left side-->
+                    <div class="col-lg-3 col-md-4 d-md-block">
+                        <div class="card bg-common card-left bg-commom">
+                            <div class="card-body">
+
+
+                                <nav class="nav d-md-block d-none">
+                                
+
+<a data-toggle='tab' class="nav-link active" aria-current="page" href="#"></a>
+<a data-toggle='tab' class="nav-link" href="#profile"><i class="fas fa-user mr-1"></i> Profile</a>
+<a data-toggle='tab' class="nav-link" href="#dashboard"><i class="fas fa-tachometer-alt mr-1"></i> DashBoard</a>
+<a data-toggle='tab' class="nav-link" href="#courses"><i class="fas fa-calendar-alt"></i> Courses</a>
+<a data-toggle='tab' class="nav-link" href="#studentsinfo"><i class="fas fa-users mr-1"></i> StudentsInfo</a>
+<a data-toggle='tab' class="nav-link" href="#questionpaper"><i class="fas fa-question mr-1"></i> QuestionPaper</a>
+                                    <!--
+                                        <a data-toggle='tab' class="nav-link" href="#signout"><i class="fas fa-sign-out-alt mr-1"></i> Signout</a>
+                                    -->
+                                
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+
+                         
+
+                    <!--rght side div starts-->
+                    <div class="col-lg-8 col-md-9">
+                        <div class="card">
+                            <div class="card-header border-bottom mb-3 d-md-none">
+                                <ul class="nav nav-tabs card-header-tabs nav-fill  ">
+                                    <li class="nav-item">
+                                        <a data-toggle="tab" class="nav-link " href="#profile"><i class="fas fa-user mr-1"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a data-toggle="tab" class="nav-link" href="#dashboard"><i class="fas fa-tachometer-alt mr-1"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a data-toggle="tab" class="nav-link" href="#courses"><i class="fas fa-users mr-1"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a data-toggle="tab" class="nav-link" href="#studentsinfo"><i class="fas fa-bullhorn mr-1"></i></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a data-toggle="tab" class="nav-link" href="#questionpaper"><i class="fas fa-question"></i></a>
+                                    </li>
+
+                                    <!--
+                                    <li class="nav-item">
+                                        <a data-toggle="tab" class="nav-link" href="#signout"><i class="fas fa-sign-out-alt mr-1"></i></a>
+                                    </li>
+                                    -->
+
+                                </ul>
+                            </div>
+
+                            <!--profile-->
+                            <div class="card-body tab-content border-0">
+                                <div class="tab-pane active" id="profile">
+                                    <h6>Change Password</h6>
+                                    <form class="myForm">
+                                        <div class="form-group">
+                                            <i class="fa fa-key icon"></i>
+                                            <input class="myInput" type="password" id="password" placeholder="Enter Old Password"  required>
+                                        </div>
+                                        <div class="form-group">
+                                            <i class="fa fa-key icon"></i>
+                                            <input class="myInput" type="password" id="password" placeholder="Enter New Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                                        </div>
+                                        <div class="form-group">
+
+                                            <i class="fa fa-key icon"></i>
+                                            <input class="myInput" type="password" id="password" placeholder="Confirm New Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                                        </div>
+                                        <input type="submit" class="btn-success" value="Change Password">                                       
+                                    </form>                                 
+                                </div>
+                                <!--dashboard content-->
+                                <div class="tab-pane " id="dashboard">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="card text-center">
+                                                <div class="card-body bg-secondary text-white">
+                                                    <div class="row align-items-center">
+                                                        <div class="col">
+                                                            <i class="fa fa-users fa-4x"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h1><a href="#studentsinfo"></a>Total Students</h1>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="card text-center">
+                                                <div class="card-body bg-info text-white">
+                                                    <div class="row align-items-center">
+                                                        <div class="col">
+                                                            <i class="fa fa-chalkboard-teacher fa-4x"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h1><a href="#"></a>Total Teachers</h1>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="card text-center">
+                                                <div class="card-body bg-dark text-white">
+                                                    <div class="row align-items-center">
+                                                        <div class="col">
+                                                            <i class="fa fa-book fa-4x"></i>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h1><a href="#"></a>Total Courses</h1>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--dashboard end-->
+                                <div class="tab-pane " id="courses">
+                                    <h1>this is courses tab</h1>
+                                </div>
+                                <!--studentsinfo content-->
+                                <div class="tab-pane " id="studentsinfo">
+                                    <h1>this is studentinfo tab</h1>
+
+
+                                </div>
+                                <!--end of stundent info-->
+                                <!--question paper-->
+                                <div class="tab-pane " id="questionpaper">
+                                    <h1 class="text-primary align-items-center">ADD QUESTIONS</h1>
+                                    <!--
+                                             <select class="form-select" aria-label="Default select example">
+                                             <option selected>Open this select menu</option>
+                                             <option value="1">One</option>
+                                             <option value="2">Two</option>
+                                             <option value="3">Three</option>
+                                             </select>
+                                    -->
+                                    <!--  <div class="mb-3">
+                                        <label class="form-label">Enter Question</label>
+                                        <textarea class="form-control" id="questionpaper" rows="5"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="questionpaper" class="form-label">Enter Marks</label>
+                                        <input type="number" class="form-control" id="questionpaper">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="questionpaper" class="form-label">Option1</label>
+                                        <input type="text" class="form-control" id="questionpaper">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="questionpaper" class="form-label">Option2</label>
+                                        <input type="text" class="form-control" id="questionpaper">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="questionpaper" class="form-label">Option3</label>
+                                        <input type="text" class="form-control" id="questionpaper">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="questionpaper" class="form-label">Option4</label>
+                                        <input type="text" class="form-control" id="questionpaper">
+                                    </div>
+                                    <button class="btn btn-primary btn-lg">Add</button>      -->
+                                    
+
+
+                                        <div class="form-group">
+                                         <div class="panel panel-default">
+                                        <div class="panel-heading">ADD QUESTIONS </div>                                       
+                                        <div class="panel-body" id="main_block">
+
+
+                                            <div class="mb-3 ">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="Schoolname" placeholder="Question">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="Option1"  placeholder="Option1">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="form-group">
+                                                  <input type="text" class="form-control" id="Option2"  placeholder="Option2">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="form-group">
+                                                  <input type="text" class="form-control" id="Option3"  placeholder="Option3">
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" id="Option4" placeholder="Option4">
+                                                </div>
+                                                <div class="input-group-btn">
+                                                    <button class="btn btn-success" type="button" onclick="add_education_fields();"> <i class="fa fa-plus" aria-hidden="true"></i> add question </button>
+                                                </div>
+                                                <div class="input-group-btn">
+                                                    <button class="btn btn-primary" type="button" onclick="add_education_fields();"> <i class="fa fa-plus" aria-hidden="true"></i> add one more question </button>
+                                                </div>
+                                            </div>
+                                            <div class="clear"></div>
+                                            <div id="education_fields"></div>
+                                         </div>
+                                        </div>
+                                            <!--
+                                                <div class="panel-footer">
+                                            <small>Press <i class="fa fa-plus"> </i> to add Question :)</small>,
+                                            <small>Press <i class="fa fa-minus"></i> to remove Question :)</small>
+                                        </div>                                            
+                                          -->                                       
+                                    </div>
+
+
+
+
+                                    <!--end of question paper-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>
